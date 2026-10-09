@@ -1,0 +1,803 @@
+{
+  "schema_version": 1,
+  "source": "ScholarQuest manuscript, September 2026",
+  "status": "Paper results",
+  "score_scale": "0–1",
+  "systems": [
+    {
+      "id": "dense-retrieval",
+      "name": "Dense Retrieval",
+      "kind": "Retrieval",
+      "environment": "ScholarBase",
+      "runs": null,
+      "budget": "Original method budgets and stopping rules",
+      "scores": {
+        "method": {
+          "r25": 0.155,
+          "r100": 0.3,
+          "rall": 0.403
+        },
+        "setting": {
+          "r25": 0.11,
+          "r100": 0.219,
+          "rall": 0.306
+        },
+        "scope": {
+          "r25": 0.029,
+          "r100": 0.087,
+          "rall": 0.159
+        },
+        "comparison": {
+          "r25": 0.136,
+          "r100": 0.234,
+          "rall": 0.326
+        },
+        "overall": {
+          "r25": 0.103,
+          "r100": 0.206,
+          "rall": 0.293
+        }
+      }
+    },
+    {
+      "id": "hybrid-retrieval",
+      "name": "Hybrid Retrieval",
+      "kind": "Retrieval",
+      "environment": "ScholarBase",
+      "runs": null,
+      "budget": "Original method budgets and stopping rules",
+      "scores": {
+        "method": {
+          "r25": 0.153,
+          "r100": 0.303,
+          "rall": 0.344
+        },
+        "setting": {
+          "r25": 0.115,
+          "r100": 0.226,
+          "rall": 0.257
+        },
+        "scope": {
+          "r25": 0.038,
+          "r100": 0.091,
+          "rall": 0.111
+        },
+        "comparison": {
+          "r25": 0.133,
+          "r100": 0.25,
+          "rall": 0.276
+        },
+        "overall": {
+          "r25": 0.106,
+          "r100": 0.212,
+          "rall": 0.242
+        }
+      }
+    },
+    {
+      "id": "google-search",
+      "name": "Google Search",
+      "kind": "Search service",
+      "environment": "External search index",
+      "runs": null,
+      "budget": "Up to 300 returned papers",
+      "scores": {
+        "method": {
+          "r25": 0.106,
+          "r100": 0.146,
+          "rall": 0.167
+        },
+        "setting": {
+          "r25": 0.059,
+          "r100": 0.094,
+          "rall": 0.117
+        },
+        "scope": {
+          "r25": 0.003,
+          "r100": 0.006,
+          "rall": 0.013
+        },
+        "comparison": {
+          "r25": 0.122,
+          "r100": 0.135,
+          "rall": 0.143
+        },
+        "overall": {
+          "r25": 0.065,
+          "r100": 0.089,
+          "rall": 0.105
+        }
+      }
+    },
+    {
+      "id": "google-scholar",
+      "name": "Google Scholar",
+      "kind": "Search service",
+      "environment": "External search index",
+      "runs": null,
+      "budget": "Up to 300 returned papers",
+      "scores": {
+        "method": {
+          "r25": 0.084,
+          "r100": 0.111,
+          "rall": 0.143
+        },
+        "setting": {
+          "r25": 0.073,
+          "r100": 0.102,
+          "rall": 0.12
+        },
+        "scope": {
+          "r25": 0.004,
+          "r100": 0.01,
+          "rall": 0.01
+        },
+        "comparison": {
+          "r25": 0.107,
+          "r100": 0.125,
+          "rall": 0.13
+        },
+        "overall": {
+          "r25": 0.062,
+          "r100": 0.082,
+          "rall": 0.096
+        }
+      }
+    },
+    {
+      "id": "semantic-scholar",
+      "name": "Semantic Scholar",
+      "kind": "Search service",
+      "environment": "External search index",
+      "runs": null,
+      "budget": "Up to 300 returned papers",
+      "scores": {
+        "method": {
+          "r25": 0.064,
+          "r100": 0.085,
+          "rall": 0.101
+        },
+        "setting": {
+          "r25": 0.103,
+          "r100": 0.116,
+          "rall": 0.125
+        },
+        "scope": {
+          "r25": 0.001,
+          "r100": 0.002,
+          "rall": 0.002
+        },
+        "comparison": {
+          "r25": 0.089,
+          "r100": 0.103,
+          "rall": 0.103
+        },
+        "overall": {
+          "r25": 0.061,
+          "r100": 0.073,
+          "rall": 0.08
+        }
+      }
+    },
+    {
+      "id": "deepxiv",
+      "name": "DeepXiv",
+      "kind": "Search service",
+      "environment": "External search index",
+      "runs": null,
+      "budget": "Up to 300 returned papers",
+      "scores": {
+        "method": {
+          "r25": 0.091,
+          "r100": 0.214,
+          "rall": 0.341
+        },
+        "setting": {
+          "r25": 0.068,
+          "r100": 0.181,
+          "rall": 0.304
+        },
+        "scope": {
+          "r25": 0.007,
+          "r100": 0.023,
+          "rall": 0.064
+        },
+        "comparison": {
+          "r25": 0.039,
+          "r100": 0.118,
+          "rall": 0.286
+        },
+        "overall": {
+          "r25": 0.052,
+          "r100": 0.135,
+          "rall": 0.243
+        }
+      }
+    },
+    {
+      "id": "pasa",
+      "name": "PaSa",
+      "kind": "Agent",
+      "environment": "ScholarBase",
+      "runs": 3,
+      "budget": "Original method budgets and stopping rules",
+      "scores": {
+        "method": {
+          "r25": 0.245,
+          "r100": 0.345,
+          "rall": 0.366
+        },
+        "setting": {
+          "r25": 0.23,
+          "r100": 0.296,
+          "rall": 0.312
+        },
+        "scope": {
+          "r25": 0.103,
+          "r100": 0.193,
+          "rall": 0.242
+        },
+        "comparison": {
+          "r25": 0.256,
+          "r100": 0.294,
+          "rall": 0.324
+        },
+        "overall": {
+          "r25": 0.202,
+          "r100": 0.28,
+          "rall": 0.309
+        }
+      }
+    },
+    {
+      "id": "spar",
+      "name": "SPAR",
+      "kind": "Agent",
+      "environment": "ScholarBase",
+      "runs": 3,
+      "budget": "Original method budgets and stopping rules",
+      "scores": {
+        "method": {
+          "r25": 0.242,
+          "r100": 0.333,
+          "rall": 0.351
+        },
+        "setting": {
+          "r25": 0.223,
+          "r100": 0.282,
+          "rall": 0.293
+        },
+        "scope": {
+          "r25": 0.102,
+          "r100": 0.188,
+          "rall": 0.222
+        },
+        "comparison": {
+          "r25": 0.246,
+          "r100": 0.28,
+          "rall": 0.301
+        },
+        "overall": {
+          "r25": 0.197,
+          "r100": 0.269,
+          "rall": 0.29
+        }
+      }
+    },
+    {
+      "id": "paperscout",
+      "name": "PaperScout",
+      "kind": "Agent",
+      "environment": "ScholarBase",
+      "runs": 3,
+      "budget": "Original method budgets and stopping rules",
+      "scores": {
+        "method": {
+          "r25": 0.275,
+          "r100": 0.408,
+          "rall": 0.451
+        },
+        "setting": {
+          "r25": 0.246,
+          "r100": 0.341,
+          "rall": 0.366
+        },
+        "scope": {
+          "r25": 0.091,
+          "r100": 0.182,
+          "rall": 0.239
+        },
+        "comparison": {
+          "r25": 0.275,
+          "r100": 0.327,
+          "rall": 0.358
+        },
+        "overall": {
+          "r25": 0.214,
+          "r100": 0.312,
+          "rall": 0.352
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "4b",
+      "name": "PaperScout-4B",
+      "kind": "Task-trained · shared harness",
+      "valid": 100,
+      "tokens": 54156.78,
+      "r50": 0.204,
+      "scores": {
+        "setting": {
+          "rall": 0.4174440425166184,
+          "valid": 25,
+          "tokens": 58264.88
+        },
+        "method": {
+          "rall": 0.332291335539425,
+          "valid": 25,
+          "tokens": 60578.2
+        },
+        "comparison": {
+          "rall": 0.17231716120735158,
+          "valid": 25,
+          "tokens": 39704.56
+        },
+        "scope": {
+          "rall": 0.24135457516948336,
+          "valid": 25,
+          "tokens": 58079.48
+        },
+        "overall": {
+          "rall": 0.2908517786082196,
+          "valid": 100,
+          "tokens": 54156.78
+        }
+      },
+      "configuration": "Task-trained small-model reference; released inference configuration",
+      "config": {
+        "max_steps": 15,
+        "max_parallel_calls": 5,
+        "query_timeout": 900.0,
+        "paper_to": "2026-04",
+        "modelId": "Qwen3-4b-instruct",
+        "promptFormat": null,
+        "thinking": null,
+        "temperature": null,
+        "toolParser": null
+      },
+      "behavior": {
+        "calls": 45.8,
+        "expandPercent": 44.2,
+        "candidates": 418
+      }
+    },
+    {
+      "id": "qwen",
+      "name": "Qwen3.8-Max",
+      "kind": "Foundation model · shared harness",
+      "valid": 100,
+      "tokens": 51280.46,
+      "r50": 0.216,
+      "scores": {
+        "setting": {
+          "rall": 0.451539733033393,
+          "valid": 25,
+          "tokens": 54057.08
+        },
+        "method": {
+          "rall": 0.4623022817703432,
+          "valid": 25,
+          "tokens": 62599.44
+        },
+        "comparison": {
+          "rall": 0.33159374617188486,
+          "valid": 25,
+          "tokens": 44947.04
+        },
+        "scope": {
+          "rall": 0.19833742751789865,
+          "valid": 25,
+          "tokens": 43518.28
+        },
+        "overall": {
+          "rall": 0.3609432971233799,
+          "valid": 100,
+          "tokens": 51280.46
+        }
+      },
+      "configuration": "Thinking: false",
+      "config": {
+        "max_steps": 15,
+        "max_parallel_calls": 5,
+        "query_timeout": 900.0,
+        "paper_to": "2026-04",
+        "modelId": "qwen3.8-max",
+        "promptFormat": null,
+        "thinking": "false",
+        "temperature": null,
+        "toolParser": null
+      },
+      "behavior": {
+        "calls": 38.6,
+        "expandPercent": 76.0,
+        "candidates": 629
+      }
+    },
+    {
+      "id": "glm",
+      "name": "GLM-5.3",
+      "kind": "Foundation model · shared harness",
+      "valid": 99,
+      "tokens": 67571.93939393939,
+      "r50": 0.215,
+      "scores": {
+        "setting": {
+          "rall": 0.36461866821689903,
+          "valid": 24,
+          "tokens": 70226.58333333333
+        },
+        "method": {
+          "rall": 0.367433111377056,
+          "valid": 25,
+          "tokens": 70425.28
+        },
+        "comparison": {
+          "rall": 0.20180519117562737,
+          "valid": 25,
+          "tokens": 59803.92
+        },
+        "scope": {
+          "rall": 0.1908201550427864,
+          "valid": 25,
+          "tokens": 69938.16
+        },
+        "overall": {
+          "rall": 0.2803263583544679,
+          "valid": 99,
+          "tokens": 67571.93939393939
+        }
+      },
+      "configuration": "Prompt: native_v1; Thinking: provider-default; Temperature: 0.1",
+      "config": {
+        "max_steps": 15,
+        "max_parallel_calls": 5,
+        "query_timeout": 900.0,
+        "paper_to": "2026-04",
+        "modelId": "glm-5.3",
+        "promptFormat": "native_v1",
+        "thinking": "provider-default",
+        "temperature": "0.1",
+        "toolParser": "native_or_text_v1"
+      },
+      "behavior": {
+        "calls": 51.2,
+        "expandPercent": 24.2,
+        "candidates": 319
+      }
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek-v4-Pro",
+      "kind": "Foundation model · shared harness",
+      "valid": 93,
+      "tokens": 81407.31182795699,
+      "r50": 0.239,
+      "scores": {
+        "setting": {
+          "rall": 0.4149346989254129,
+          "valid": 22,
+          "tokens": 82230.13636363637
+        },
+        "method": {
+          "rall": 0.45208496285353916,
+          "valid": 24,
+          "tokens": 88079.95833333333
+        },
+        "comparison": {
+          "rall": 0.3325095900762729,
+          "valid": 23,
+          "tokens": 73387.39130434782
+        },
+        "scope": {
+          "rall": 0.23274447910220117,
+          "valid": 24,
+          "tokens": 81666.16666666667
+        },
+        "overall": {
+          "rall": 0.3571203285489369,
+          "valid": 93,
+          "tokens": 81407.31182795699
+        }
+      },
+      "configuration": "Prompt: legacy; Thinking: true; Temperature: 0.1",
+      "config": {
+        "max_steps": 15,
+        "max_parallel_calls": 5,
+        "query_timeout": 900.0,
+        "paper_to": "2026-04",
+        "modelId": "deepseek-v4-pro",
+        "promptFormat": "legacy",
+        "thinking": "true",
+        "temperature": "0.1",
+        "toolParser": "native"
+      },
+      "behavior": {
+        "calls": 60.6,
+        "expandPercent": 29.5,
+        "candidates": 463
+      }
+    },
+    {
+      "id": "kimi",
+      "name": "Kimi-K2.5",
+      "kind": "Foundation model · shared harness",
+      "valid": 100,
+      "tokens": 55480.9,
+      "r50": 0.249,
+      "scores": {
+        "setting": {
+          "rall": 0.5133305446354545,
+          "valid": 25,
+          "tokens": 63082.8
+        },
+        "method": {
+          "rall": 0.5350991692899518,
+          "valid": 25,
+          "tokens": 66276.68
+        },
+        "comparison": {
+          "rall": 0.3100907482454518,
+          "valid": 25,
+          "tokens": 46423
+        },
+        "scope": {
+          "rall": 0.22032678443226206,
+          "valid": 25,
+          "tokens": 46141.12
+        },
+        "overall": {
+          "rall": 0.39471181165078,
+          "valid": 100,
+          "tokens": 55480.9
+        }
+      },
+      "configuration": "Prompt: native_v1; Thinking: false; Temperature: 0.6",
+      "config": {
+        "max_steps": 15,
+        "max_parallel_calls": 5,
+        "query_timeout": 900.0,
+        "paper_to": "2026-04",
+        "modelId": "kimi-k2.5",
+        "promptFormat": "native_v1",
+        "thinking": "false",
+        "temperature": "0.6",
+        "toolParser": "native"
+      },
+      "behavior": {
+        "calls": 49.3,
+        "expandPercent": 64.2,
+        "candidates": 645
+      }
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini 3.1 Pro",
+      "kind": "Foundation model · shared harness",
+      "valid": 94,
+      "tokens": 68553.76595744681,
+      "r50": 0.296,
+      "scores": {
+        "setting": {
+          "rall": 0.45951807061877886,
+          "valid": 25,
+          "tokens": 64662.88
+        },
+        "method": {
+          "rall": 0.44275370751935306,
+          "valid": 25,
+          "tokens": 72008
+        },
+        "comparison": {
+          "rall": 0.470699514309074,
+          "valid": 23,
+          "tokens": 69315.04347826086
+        },
+        "scope": {
+          "rall": 0.2700003641673507,
+          "valid": 21,
+          "tokens": 68239.80952380953
+        },
+        "overall": {
+          "rall": 0.4154562864901741,
+          "valid": 94,
+          "tokens": 68553.76595744681
+        }
+      },
+      "configuration": "Prompt: legacy; Thinking: provider-default; Temperature: 0.1",
+      "config": {
+        "max_steps": 15,
+        "max_parallel_calls": 5,
+        "query_timeout": 900.0,
+        "paper_to": "2026-04",
+        "modelId": "gemini-3.1-pro-preview",
+        "promptFormat": "legacy",
+        "thinking": "provider-default",
+        "temperature": "0.1",
+        "toolParser": "native"
+      },
+      "behavior": {
+        "calls": 32.4,
+        "expandPercent": 45.4,
+        "candidates": 419
+      }
+    },
+    {
+      "id": "gpt",
+      "name": "GPT-5.6-Sol",
+      "kind": "Foundation model · shared harness",
+      "valid": 94,
+      "tokens": 62841.617021276594,
+      "r50": 0.334,
+      "scores": {
+        "setting": {
+          "rall": 0.8174192977549992,
+          "valid": 25,
+          "tokens": 72150.24
+        },
+        "method": {
+          "rall": 0.6925717302392048,
+          "valid": 25,
+          "tokens": 63621.44
+        },
+        "comparison": {
+          "rall": 0.6365983184235274,
+          "valid": 23,
+          "tokens": 68403.91304347826
+        },
+        "scope": {
+          "rall": 0.4052096498756166,
+          "valid": 21,
+          "tokens": 44739.52380952381
+        },
+        "overall": {
+          "rall": 0.6478823369253637,
+          "valid": 94,
+          "tokens": 62841.617021276594
+        }
+      },
+      "configuration": "Prompt: gpt_keyword_v1; Thinking: provider-default; Temperature: 0.1",
+      "config": {
+        "max_steps": 15,
+        "max_parallel_calls": 5,
+        "query_timeout": 900.0,
+        "paper_to": "2026-04",
+        "modelId": "gpt-5.6-sol",
+        "promptFormat": "gpt_keyword_v1:a1616442a0abf4fab31f30669e69d82f395fcc2d471035471342364b41cad462",
+        "thinking": "provider-default",
+        "temperature": "0.1",
+        "toolParser": "native"
+      },
+      "behavior": {
+        "calls": 64.3,
+        "expandPercent": 49.0,
+        "candidates": 1095
+      }
+    }
+  ],
+  "examples": [
+    {
+      "id": "BQ_002897",
+      "category": "method",
+      "domain": "cs.CV",
+      "query": "Which papers explore the use of deep reinforcement learning for video summarization?",
+      "constraint": "technique = deep reinforcement learning",
+      "gold_count": 11,
+      "papers": [
+        {
+          "id": "2505.23268",
+          "title": "Unsupervised Transcript-assisted Video Summarization and Highlight Detection"
+        },
+        {
+          "id": "2407.04258",
+          "title": "Reinforcement Learning for Unsupervised Video Summarization with Reward Generator Training"
+        },
+        {
+          "id": "2109.01309",
+          "title": "Unsupervised multi-latent space reinforcement learning framework for video summarization in ultrasound imaging"
+        }
+      ]
+    },
+    {
+      "id": "BQ_000815",
+      "category": "comparison",
+      "domain": "cs.LG",
+      "query": "Which papers report that transfer learning outperforms random initialization in model performance?",
+      "constraint": "comparison = outperforms random initialization",
+      "gold_count": 15,
+      "papers": [
+        {
+          "id": "2511.11622",
+          "title": "Small Vocabularies, Big Gains: Pretraining and Tokenization in Time Series Models"
+        },
+        {
+          "id": "2410.08194",
+          "title": "Features are fate: a theory of transfer learning in high-dimensional regression"
+        },
+        {
+          "id": "2408.00695",
+          "title": "Accelerating Full Waveform Inversion By Transfer Learning"
+        }
+      ]
+    },
+    {
+      "id": "BQ_001592",
+      "category": "scope",
+      "domain": "cs.SE",
+      "query": "I am looking for papers on software maintenance tools that exclude static analysis tools from their scope.",
+      "constraint": "exclude_filtering = static analysis tools",
+      "gold_count": 12,
+      "papers": [
+        {
+          "id": "2506.24015",
+          "title": "Hierarchical Knowledge Injection for Improving LLM-based Program Repair"
+        },
+        {
+          "id": "2506.13182",
+          "title": "From Empirical Evaluation to Context-Aware Enhancement: Repairing Regression Errors with LLMs"
+        },
+        {
+          "id": "2410.14393",
+          "title": "Debug Smarter, Not Harder: AI Agents for Error Resolution in Computational Notebooks"
+        }
+      ]
+    },
+    {
+      "id": "BQ_001790",
+      "category": "setting",
+      "domain": "cs.CY",
+      "query": "Which papers study or evaluate privacy and security issues, policies, or privacy-preserving techniques in the healthcare domain?",
+      "constraint": "application_domain = healthcare",
+      "gold_count": 19,
+      "papers": [
+        {
+          "id": "2511.11347",
+          "title": "Privacy Challenges and Solutions in Retrieval-Augmented Generation-Enhanced LLMs for Healthcare Chatbots: A Review of Applications, Risks, and Future Directions"
+        },
+        {
+          "id": "2509.14581",
+          "title": "Can I Trust This Chatbot? Assessing User Privacy in AI-Healthcare Chatbot Applications"
+        },
+        {
+          "id": "2502.02749",
+          "title": "Unveiling Privacy and Security Gaps in Female Health Apps"
+        }
+      ]
+    }
+  ],
+  "protocol": {
+    "system": [
+      "System results use ScholarQuest (1,111 queries). Agentic entries are means over three independent runs.",
+      "Metrics are query-level macro means over normalized, deduplicated arXiv IDs; the earliest rank is retained.",
+      "Recall@All evaluates the complete ranking at termination. Systems retain their original search, expansion, interaction-round and stopping budgets.",
+      "Retrieval baselines and agentic systems use ScholarBase. External search services use their own search indexes."
+    ],
+    "model": [
+      "Model configuration results use ScholarQuest-100, with 25 queries per research intent. These scores are not directly comparable to the system track.",
+      "Failed or incomplete queries and invalid token records are excluded from both recall and token means; failures are not assigned zero. Valid query sets may differ.",
+      "Overall values are query-level macro means over valid queries, weighting intent means by valid query counts.",
+      "Planner tokens count reported input and output from the final successful attempt. Failed attempts, preflight requests and Selector usage are excluded. Reasoning is counted once as part of completion.",
+      "Configurations differ in prompts, inference settings and tokenizers. GPT-5.6-Sol uses a dedicated keyword-search prompt. Tokens are not verified billing or money."
+    ],
+    "cases": [
+      "Displayed papers are the first three of each appendix gold list, sorted by first arXiv submission date descending. Relevance follows the benchmark title-and-abstract evidence standard."
+    ]
+  },
+  "sources": {
+    "systems": "scholarquest_iclr2027.tex: active main results table (tab:main_table)",
+    "models": "figure/model_level_token_recall.json: categories and summary (full source precision preserved)",
+    "modelR50AndBehavior": "appendix.tex: completed-run behavioral diagnostics (tab:matched_behavior); R@50 preserves published 3-decimal precision",
+    "cases": "appendix.tex: Case Studies (app:case_studies)"
+  }
+}
