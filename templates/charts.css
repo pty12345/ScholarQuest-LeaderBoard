@@ -1,0 +1,35 @@
+.model-charts{margin-top:25px;padding-top:23px;border-top:1px solid var(--line)}
+.chart-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:30px}
+.chart-panel{margin:0;min-width:0}
+.chart-panel h3{font-size:15px;font-weight:650;letter-spacing:-.15px}
+.chart-subtitle{font-size:12px;color:var(--muted);margin-top:3px;line-height:1.5}
+.chart-head{min-height:48px}
+.scatter{width:100%;height:278px;display:block;overflow:visible;font-family:inherit}
+.scatter text{font-family:inherit;font-size:11px;fill:var(--muted);font-variant-numeric:tabular-nums}
+.scatter .grid-line{stroke:#e9edef;stroke-width:1}
+.scatter .axis-line{stroke:#bac5c9;stroke-width:1}
+.scatter .axis-title{font-size:11px;fill:var(--muted)}
+.chart-point{cursor:pointer;outline:none}
+.chart-point .point-hit{fill:transparent}
+.chart-point .point-mark{fill:white;stroke:var(--green);stroke-width:1.6}
+.chart-point .point-ring{fill:none;stroke:var(--green);stroke-width:1.1;opacity:0}
+.chart-point text{fill:var(--muted);font-size:11px;paint-order:stroke;stroke:white;stroke-width:4px;stroke-linejoin:round}
+.chart-point .label-line{stroke:#bcc8c1;stroke-width:1;fill:none}
+.chart-point[aria-pressed=true] .point-mark{fill:var(--green)}
+.chart-point[aria-pressed=true] text{fill:var(--green);font-weight:650}
+.chart-point[aria-pressed=true] .point-ring,.chart-point:focus-visible .point-ring,.chart-point:hover .point-ring{opacity:1}
+.chart-point:focus-visible .point-ring{stroke-width:2}
+.scatter[data-compact=true] .chart-point:not([aria-pressed=true]) .point-label{display:none}
+.chart-readout{min-height:37px;padding-top:4px;font-size:12px;line-height:1.6;font-variant-numeric:tabular-nums;color:var(--muted)}
+.chart-readout strong{font-weight:600;color:var(--ink)}
+.intent-panel{border-left:1px solid var(--line);padding-left:28px}
+.chart-select{display:block;width:100%;margin:10px 0 16px;font-size:13px;color:var(--ink);background:white;border:1px solid #d5dde0;border-radius:5px;padding:7px 9px}
+.intent-bars{display:grid;gap:16px;margin:0;padding:0;list-style:none}
+.intent-label{display:flex;align-items:baseline;justify-content:space-between;gap:12px;font-size:12px;margin-bottom:5px}
+.intent-value{font-variant-numeric:tabular-nums;font-weight:600;color:var(--green)}
+.intent-track{height:8px;background:#eef2ef;border-radius:2px;overflow:hidden}
+.intent-fill{display:block;height:100%;background:var(--green);border-radius:2px}
+.intent-axis{display:flex;justify-content:space-between;margin-top:8px;font-size:10px;font-variant-numeric:tabular-nums;color:var(--muted)}
+.chart-footnote{font-size:11px;color:var(--muted);line-height:1.7;margin-top:12px}
+@media(max-width:760px){.chart-grid{grid-template-columns:1fr;gap:20px}.intent-panel{border-left:0;border-top:1px solid var(--line);padding:18px 0 0}.chart-head{min-height:0}.scatter{height:278px;margin-top:8px}.chart-readout{min-height:38px}.model-charts{margin-top:21px;padding-top:19px}.chart-select{max-width:100%}.intent-bars{gap:13px}}
+@media print{.model-charts{break-inside:avoid}.scatter .point-label{display:block!important}}

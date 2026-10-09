@@ -14,6 +14,9 @@ def script_json(value):
 
 def main():
     template = (ROOT / "templates/page.html").read_text(encoding="utf-8")
+    for kind in ("html", "css", "js"):
+        fragment = (ROOT / f"templates/charts.{kind}").read_text(encoding="utf-8")
+        template = template.replace(f"@@CHARTS_{kind.upper()}@@", fragment)
     data = json.loads((ROOT / "results.json").read_text(encoding="utf-8"))
     locales = json.loads((ROOT / "locales.json").read_text(encoding="utf-8"))
     output = ROOT / "dist"
@@ -29,7 +32,7 @@ def main():
 
         page = re.sub(r"\{\{(\w+)\}\}", substitute, template)
         page = page.replace("@@DATA@@", script_json(data)).replace("@@UI@@", script_json(locales[lang]["ui"]))
-        if re.search(r"\{\{\w+\}\}|@@(?:DATA|UI)@@", page):
+        if re.search(r"\{\{\w+\}\}|@@[A-Z_]+@@", page):
             raise ValueError(f"Unresolved placeholder in {filename}")
         (output / filename).write_text(page, encoding="utf-8")
         print(f"Built dist/{filename}")

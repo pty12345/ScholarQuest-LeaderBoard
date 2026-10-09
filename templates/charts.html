@@ -1,0 +1,16 @@
+<section class="model-charts" id="model-charts" aria-label="{{charts_label}}" hidden>
+  <div class="chart-grid">
+    <figure class="chart-panel">
+      <figcaption class="chart-head"><h3 id="scatter-title">{{scatter_title}}</h3><p class="chart-subtitle" id="scatter-subtitle">{{scatter_subtitle}}</p></figcaption>
+      <svg class="scatter" id="token-scatter" role="group" aria-labelledby="scatter-title scatter-subtitle"></svg>
+      <p class="chart-readout" id="chart-readout" aria-live="polite"></p>
+    </figure>
+    <figure class="chart-panel intent-panel">
+      <figcaption><h3 id="intent-title">{{intent_title}}</h3><p class="chart-subtitle">{{intent_subtitle}}</p></figcaption>
+      <label class="sr-only" for="chart-model">{{chart_model_label}}</label><select class="chart-select" id="chart-model"></select>
+      <ul class="intent-bars" id="intent-bars" aria-labelledby="intent-title"></ul>
+      <div class="intent-axis" aria-hidden="true"><span>0</span><span>0.5</span><span>1.0</span></div>
+    </figure>
+  </div>
+  <p class="chart-footnote">{{chart_note}} <a href="#evaluation">{{evaluation}}</a></p>
+</section>

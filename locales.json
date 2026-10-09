@@ -44,7 +44,14 @@
       "download_bibtex": "Download .bib",
       "footer": "Results transcribed from the ScholarQuest manuscript.",
       "close": "Close details",
-      "noscript": "Enable JavaScript to view the leaderboard. Code and data remain available from the resource link above."
+      "noscript": "Enable JavaScript to view the leaderboard. Code and data remain available from the resource link above.",
+      "charts_label": "Model performance charts",
+      "scatter_title": "Tokens vs. recall",
+      "scatter_subtitle": "ScholarQuest-100 · All 7 configurations · Select a point to explore.",
+      "intent_title": "Recall by research intent",
+      "intent_subtitle": "Selected configuration · Recall@All · Scale 0–1",
+      "chart_model_label": "Choose a model configuration",
+      "chart_note": "Means use each configuration’s valid queries. Tokens count the final successful Planner input + output, excluding Selector and retries; query sets and tokenizers differ."
     },
     "ui": {
       "lang": "en",
@@ -98,7 +105,9 @@
         "comparison": "Comparison"
       },
       "queries": {},
-      "gold_papers": "gold papers"
+      "gold_papers": "gold papers",
+      "chart_x_axis": "Mean Planner tokens / query →",
+      "chart_tokens_accessible": "Planner tokens per query"
     }
   },
   "zh-CN": {
@@ -146,7 +155,14 @@
       "download_bibtex": "下载 .bib",
       "footer": "结果整理自 ScholarQuest 论文手稿。",
       "close": "关闭详情",
-      "noscript": "请启用 JavaScript 以查看排行榜，也可通过上方链接访问代码与数据。"
+      "noscript": "请启用 JavaScript 以查看排行榜，也可通过上方链接访问代码与数据。",
+      "charts_label": "模型表现图表",
+      "scatter_title": "Token 消耗与召回率",
+      "scatter_subtitle": "ScholarQuest-100 · 全部 7 个配置 · 点击散点切换模型。",
+      "intent_title": "各类研究意图表现",
+      "intent_subtitle": "所选模型配置 · Recall@All · 范围 0–1",
+      "chart_model_label": "选择模型配置",
+      "chart_note": "均值仅统计各配置的有效查询。Tokens 计入 Planner 最终成功尝试的输入与输出，不含 Selector 和失败重试；各配置的查询集合及分词器不同。"
     },
     "ui": {
       "lang": "zh-CN",
@@ -206,7 +222,9 @@
         "BQ_001592": "我想寻找软件维护工具方面的论文，研究范围不包含静态分析工具。",
         "BQ_001790": "哪些论文研究或评估了医疗领域的隐私与安全问题、政策或隐私保护技术？"
       },
-      "gold_papers": "篇金标准论文"
+      "gold_papers": "篇金标准论文",
+      "chart_x_axis": "每条查询的平均 Planner tokens →",
+      "chart_tokens_accessible": "Planner tokens / 查询"
     }
   }
 }
