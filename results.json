@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "source": "ScholarQuest manuscript, September 2026; model top-50 metrics recomputed October 10, 2026",
+  "source": "ScholarQuest manuscript, September 2026; model top-50 metrics recomputed and system Precision/F1 imported October 10, 2026",
   "status": "Paper results",
-  "score_scale": "0–1",
+  "score_scale": "Retrieval metrics: 0–1; LLM score: unavailable, scale not specified",
   "systems": [
     {
       "id": "dense-retrieval",
@@ -15,27 +15,52 @@
         "method": {
           "r25": 0.155,
           "r100": 0.3,
-          "rall": 0.403
+          "rall": 0.403,
+          "p25": 0.211,
+          "p100": 0.121,
+          "f125": 0.144,
+          "f1100": 0.145,
+          "llm_score": null
         },
         "setting": {
           "r25": 0.11,
           "r100": 0.219,
-          "rall": 0.306
+          "rall": 0.306,
+          "p25": 0.141,
+          "p100": 0.08,
+          "f125": 0.102,
+          "f1100": 0.099,
+          "llm_score": null
         },
         "scope": {
           "r25": 0.029,
           "r100": 0.087,
-          "rall": 0.159
+          "rall": 0.159,
+          "p25": 0.059,
+          "p100": 0.045,
+          "f125": 0.032,
+          "f1100": 0.049,
+          "llm_score": null
         },
         "comparison": {
           "r25": 0.136,
           "r100": 0.234,
-          "rall": 0.326
+          "rall": 0.326,
+          "p25": 0.063,
+          "p100": 0.029,
+          "f125": 0.076,
+          "f1100": 0.048,
+          "llm_score": null
         },
         "overall": {
           "r25": 0.103,
           "r100": 0.206,
-          "rall": 0.293
+          "rall": 0.293,
+          "p25": 0.1246957695769577,
+          "p100": 0.07335463546354637,
+          "f125": 0.08946534653465346,
+          "f1100": 0.08943384338433844,
+          "llm_score": null
         }
       }
     },
@@ -50,27 +75,52 @@
         "method": {
           "r25": 0.153,
           "r100": 0.303,
-          "rall": 0.344
+          "rall": 0.344,
+          "p25": 0.221,
+          "p100": 0.124,
+          "f125": 0.147,
+          "f1100": 0.148,
+          "llm_score": null
         },
         "setting": {
           "r25": 0.115,
           "r100": 0.226,
-          "rall": 0.257
+          "rall": 0.257,
+          "p25": 0.15,
+          "p100": 0.082,
+          "f125": 0.107,
+          "f1100": 0.102,
+          "llm_score": null
         },
         "scope": {
           "r25": 0.038,
           "r100": 0.091,
-          "rall": 0.111
+          "rall": 0.111,
+          "p25": 0.08,
+          "p100": 0.048,
+          "f125": 0.042,
+          "f1100": 0.052,
+          "llm_score": null
         },
         "comparison": {
           "r25": 0.133,
           "r100": 0.25,
-          "rall": 0.276
+          "rall": 0.276,
+          "p25": 0.064,
+          "p100": 0.03,
+          "f125": 0.075,
+          "f1100": 0.05,
+          "llm_score": null
         },
         "overall": {
           "r25": 0.106,
           "r100": 0.212,
-          "rall": 0.242
+          "rall": 0.242,
+          "p25": 0.13616741674167415,
+          "p100": 0.07575877587758777,
+          "f125": 0.09443024302430243,
+          "f1100": 0.09228082808280827,
+          "llm_score": null
         }
       }
     },
@@ -85,27 +135,52 @@
         "method": {
           "r25": 0.106,
           "r100": 0.146,
-          "rall": 0.167
+          "rall": 0.167,
+          "p25": 0.181,
+          "p100": 0.079,
+          "f125": 0.112,
+          "f1100": 0.087,
+          "llm_score": null
         },
         "setting": {
           "r25": 0.059,
           "r100": 0.094,
-          "rall": 0.117
+          "rall": 0.117,
+          "p25": 0.086,
+          "p100": 0.046,
+          "f125": 0.058,
+          "f1100": 0.054,
+          "llm_score": null
         },
         "scope": {
           "r25": 0.003,
           "r100": 0.006,
-          "rall": 0.013
+          "rall": 0.013,
+          "p25": 0.012,
+          "p100": 0.006,
+          "f125": 0.005,
+          "f1100": 0.006,
+          "llm_score": null
         },
         "comparison": {
           "r25": 0.122,
           "r100": 0.135,
-          "rall": 0.143
+          "rall": 0.143,
+          "p25": 0.037,
+          "p100": 0.012,
+          "f125": 0.055,
+          "f1100": 0.022,
+          "llm_score": null
         },
         "overall": {
           "r25": 0.065,
           "r100": 0.089,
-          "rall": 0.105
+          "rall": 0.105,
+          "p25": 0.08321152115211522,
+          "p100": 0.03835463546354636,
+          "f125": 0.0570972097209721,
+          "f1100": 0.04437803780378037,
+          "llm_score": null
         }
       }
     },
@@ -120,27 +195,52 @@
         "method": {
           "r25": 0.084,
           "r100": 0.111,
-          "rall": 0.143
+          "rall": 0.143,
+          "p25": 0.12,
+          "p100": 0.049,
+          "f125": 0.081,
+          "f1100": 0.057,
+          "llm_score": null
         },
         "setting": {
           "r25": 0.073,
           "r100": 0.102,
-          "rall": 0.12
+          "rall": 0.12,
+          "p25": 0.1,
+          "p100": 0.042,
+          "f125": 0.07,
+          "f1100": 0.051,
+          "llm_score": null
         },
         "scope": {
           "r25": 0.004,
           "r100": 0.01,
-          "rall": 0.01
+          "rall": 0.01,
+          "p25": 0.008,
+          "p100": 0.006,
+          "f125": 0.004,
+          "f1100": 0.006,
+          "llm_score": null
         },
         "comparison": {
           "r25": 0.107,
           "r100": 0.125,
-          "rall": 0.13
+          "rall": 0.13,
+          "p25": 0.054,
+          "p100": 0.018,
+          "f125": 0.062,
+          "f1100": 0.028,
+          "llm_score": null
         },
         "overall": {
           "r25": 0.062,
           "r100": 0.082,
-          "rall": 0.096
+          "rall": 0.096,
+          "p25": 0.07214761476147616,
+          "p100": 0.029958595859585962,
+          "f125": 0.052934293429342937,
+          "f1100": 0.03627182718271827,
+          "llm_score": null
         }
       }
     },
@@ -155,27 +255,52 @@
         "method": {
           "r25": 0.064,
           "r100": 0.085,
-          "rall": 0.101
+          "rall": 0.101,
+          "p25": 0.091,
+          "p100": 0.037,
+          "f125": 0.061,
+          "f1100": 0.044,
+          "llm_score": null
         },
         "setting": {
           "r25": 0.103,
           "r100": 0.116,
-          "rall": 0.125
+          "rall": 0.125,
+          "p25": 0.141,
+          "p100": 0.048,
+          "f125": 0.098,
+          "f1100": 0.058,
+          "llm_score": null
         },
         "scope": {
           "r25": 0.001,
           "r100": 0.002,
-          "rall": 0.002
+          "rall": 0.002,
+          "p25": 0.002,
+          "p100": 0.001,
+          "f125": 0.001,
+          "f1100": 0.001,
+          "llm_score": null
         },
         "comparison": {
           "r25": 0.089,
           "r100": 0.103,
-          "rall": 0.103
+          "rall": 0.103,
+          "p25": 0.045,
+          "p100": 0.015,
+          "f125": 0.051,
+          "f1100": 0.023,
+          "llm_score": null
         },
         "overall": {
           "r25": 0.061,
           "r100": 0.073,
-          "rall": 0.08
+          "rall": 0.08,
+          "p25": 0.07305850585058506,
+          "p100": 0.02654995499549955,
+          "f125": 0.053073807380738074,
+          "f1100": 0.03257515751575158,
+          "llm_score": null
         }
       }
     },
@@ -190,27 +315,52 @@
         "method": {
           "r25": 0.091,
           "r100": 0.214,
-          "rall": 0.341
+          "rall": 0.341,
+          "p25": 0.13,
+          "p100": 0.094,
+          "f125": 0.087,
+          "f1100": 0.11,
+          "llm_score": null
         },
         "setting": {
           "r25": 0.068,
           "r100": 0.181,
-          "rall": 0.304
+          "rall": 0.304,
+          "p25": 0.093,
+          "p100": 0.075,
+          "f125": 0.065,
+          "f1100": 0.09,
+          "llm_score": null
         },
         "scope": {
           "r25": 0.007,
           "r100": 0.023,
-          "rall": 0.064
+          "rall": 0.064,
+          "p25": 0.014,
+          "p100": 0.014,
+          "f125": 0.008,
+          "f1100": 0.015,
+          "llm_score": null
         },
         "comparison": {
           "r25": 0.039,
           "r100": 0.118,
-          "rall": 0.286
+          "rall": 0.286,
+          "p25": 0.02,
+          "p100": 0.017,
+          "f125": 0.023,
+          "f1100": 0.026,
+          "llm_score": null
         },
         "overall": {
           "r25": 0.052,
           "r100": 0.135,
-          "rall": 0.243
+          "rall": 0.243,
+          "p25": 0.06934653465346535,
+          "p100": 0.05388478847884789,
+          "f125": 0.048289828982898284,
+          "f1100": 0.06424392439243924,
+          "llm_score": null
         }
       }
     },
@@ -225,27 +375,52 @@
         "method": {
           "r25": 0.245,
           "r100": 0.345,
-          "rall": 0.366
+          "rall": 0.366,
+          "p25": 0.358,
+          "p100": 0.159,
+          "f125": 0.237,
+          "f1100": 0.184,
+          "llm_score": null
         },
         "setting": {
           "r25": 0.23,
           "r100": 0.296,
-          "rall": 0.312
+          "rall": 0.312,
+          "p25": 0.323,
+          "p100": 0.128,
+          "f125": 0.221,
+          "f1100": 0.15,
+          "llm_score": null
         },
         "scope": {
           "r25": 0.103,
           "r100": 0.193,
-          "rall": 0.242
+          "rall": 0.242,
+          "p25": 0.216,
+          "p100": 0.12,
+          "f125": 0.114,
+          "f1100": 0.124,
+          "llm_score": null
         },
         "comparison": {
           "r25": 0.256,
           "r100": 0.294,
-          "rall": 0.324
+          "rall": 0.324,
+          "p25": 0.136,
+          "p100": 0.045,
+          "f125": 0.152,
+          "f1100": 0.069,
+          "llm_score": null
         },
         "overall": {
           "r25": 0.202,
           "r100": 0.28,
-          "rall": 0.309
+          "rall": 0.309,
+          "p25": 0.2733699369936994,
+          "p100": 0.12144374437443745,
+          "f125": 0.18426102610261025,
+          "f1100": 0.1394293429342934,
+          "llm_score": null
         }
       }
     },
@@ -260,27 +435,52 @@
         "method": {
           "r25": 0.242,
           "r100": 0.333,
-          "rall": 0.351
+          "rall": 0.351,
+          "p25": 0.356,
+          "p100": 0.153,
+          "f125": 0.235,
+          "f1100": 0.177,
+          "llm_score": null
         },
         "setting": {
           "r25": 0.223,
           "r100": 0.282,
-          "rall": 0.293
+          "rall": 0.293,
+          "p25": 0.31,
+          "p100": 0.118,
+          "f125": 0.213,
+          "f1100": 0.14,
+          "llm_score": null
         },
         "scope": {
           "r25": 0.102,
           "r100": 0.188,
-          "rall": 0.222
+          "rall": 0.222,
+          "p25": 0.209,
+          "p100": 0.116,
+          "f125": 0.112,
+          "f1100": 0.121,
+          "llm_score": null
         },
         "comparison": {
           "r25": 0.246,
           "r100": 0.28,
-          "rall": 0.301
+          "rall": 0.301,
+          "p25": 0.126,
+          "p100": 0.041,
+          "f125": 0.144,
+          "f1100": 0.063,
+          "llm_score": null
         },
         "overall": {
           "r25": 0.197,
           "r100": 0.269,
-          "rall": 0.29
+          "rall": 0.29,
+          "p25": 0.2655310531053105,
+          "p100": 0.11516111611161114,
+          "f125": 0.17960396039603957,
+          "f1100": 0.13285418541854188,
+          "llm_score": null
         }
       }
     },
@@ -295,27 +495,52 @@
         "method": {
           "r25": 0.275,
           "r100": 0.408,
-          "rall": 0.451
+          "rall": 0.451,
+          "p25": 0.369,
+          "p100": 0.178,
+          "f125": 0.258,
+          "f1100": 0.208,
+          "llm_score": null
         },
         "setting": {
           "r25": 0.246,
           "r100": 0.341,
-          "rall": 0.366
+          "rall": 0.366,
+          "p25": 0.33,
+          "p100": 0.15,
+          "f125": 0.234,
+          "f1100": 0.176,
+          "llm_score": null
         },
         "scope": {
           "r25": 0.091,
           "r100": 0.182,
-          "rall": 0.239
+          "rall": 0.239,
+          "p25": 0.181,
+          "p100": 0.114,
+          "f125": 0.097,
+          "f1100": 0.118,
+          "llm_score": null
         },
         "comparison": {
           "r25": 0.275,
           "r100": 0.327,
-          "rall": 0.358
+          "rall": 0.358,
+          "p25": 0.144,
+          "p100": 0.051,
+          "f125": 0.161,
+          "f1100": 0.077,
+          "llm_score": null
         },
         "overall": {
           "r25": 0.214,
           "r100": 0.312,
-          "rall": 0.352
+          "rall": 0.352,
+          "p25": 0.2696264626462646,
+          "p100": 0.13219081908190816,
+          "f125": 0.19026372637263728,
+          "f1100": 0.153000900090009,
+          "llm_score": null
         }
       }
     }
@@ -1682,10 +1907,13 @@
   ],
   "protocol": {
     "system": [
-      "System results use ScholarQuest (1,111 queries). Agentic entries are means over three independent runs.",
+      "System results use ScholarQuest (1,111 queries). Agent Recall entries are means over three independent runs; the repetition policy for the appendix Precision/F1 table has not been independently verified.",
       "Metrics are query-level macro means over normalized, deduplicated arXiv IDs; the earliest rank is retained.",
       "Recall@All evaluates the complete ranking at termination. Systems retain their original search, expansion, interaction-round and stopping budgets.",
-      "Retrieval baselines and agentic systems use ScholarBase. External search services use their own search indexes."
+      "Retrieval baselines and agentic systems use ScholarBase. External search services use their own search indexes.",
+      "Precision@k divides gold hits by min(k, returned unique papers); empty lists score zero. F1 is computed per query at the same cutoff, then macro averaged.",
+      "Overall Precision and F1 are approximate weighted means of the manuscript's rounded per-intent values, using 302/322/317/170 queries. Each displayed overall estimate is marked ≈; no F1 is computed from aggregate Precision and Recall.",
+      "No verified system-level LLM score source is available. Values remain null (displayed as —), not zero; judge, cutoff, scale and population remain unspecified."
     ],
     "model": [
       "Model configuration results use ScholarQuest-100, with 25 queries per research intent. These scores are not directly comparable to the system track.",
@@ -1705,7 +1933,8 @@
     "models": "figure/model_level_token_recall.json: categories and summary (full source precision preserved)",
     "modelR50AndBehavior": "Top-level r50 and behavior preserve appendix.tex (tab:matched_behavior) precision; scores.*.r50 are recomputed from frozen outputs at full precision",
     "cases": "appendix.tex: Case Studies (app:case_studies)",
-    "modelTop50": "Frozen model-run outputs recomputed 2026-10-10; binary gold; source dataset and calculation fingerprints recorded in model_evaluation"
+    "modelTop50": "Frozen model-run outputs recomputed 2026-10-10; binary gold; source dataset and calculation fingerprints recorded in model_evaluation",
+    "systemPrecisionF1": "appendix.tex: tab:app_precision_f1, three-decimal per-intent P/F1@25 and @100; overall is an approximate query-count-weighted reconstruction"
   },
   "model_evaluation": {
     "computed_at": "2026-10-10",
@@ -1726,6 +1955,61 @@
       "all_saved_p50_r50_rall_match": true,
       "all_leaderboard_recall_values_match": true,
       "formula_sanity_checks_passed": true
+    }
+  },
+  "system_evaluation": {
+    "updated": "2026-10-10",
+    "population": {
+      "dataset": "ScholarQuest",
+      "query_count": 1111,
+      "intent_counts": {
+        "method": 302,
+        "setting": 322,
+        "scope": 317,
+        "comparison": 170
+      },
+      "source": "scholarquest_iclr2027.tex: evaluation sets; appendix.tex: released benchmark intent distribution"
+    },
+    "recall": {
+      "source": "scholarquest_iclr2027.tex: tab:main_table",
+      "precision": "Published three-decimal values",
+      "agent_aggregation": "Three-run means; original values retained"
+    },
+    "precision_f1": {
+      "source": "appendix.tex: tab:app_precision_f1",
+      "source_sha256": "2b26f55e4721a14e988f1c86681ec1963ce1b489b3ba72561efdaa68d4d7944a",
+      "cutoffs": [
+        25,
+        100
+      ],
+      "per_intent_precision": "Published three-decimal query-level macro means",
+      "precision_denominator": "min(k, number of unique returned papers); empty lists score zero",
+      "f1_definition": "Per-query harmonic mean of Precision@k and Recall@k, then macro average; zero when both are zero",
+      "normalization": "Normalized arXiv IDs; versions merged; duplicates keep earliest rank",
+      "overall_is_approximate": true,
+      "overall_formula": "sum(intent_query_count * published_intent_macro_mean) / 1111",
+      "overall_rounding_error_bound": 0.0005,
+      "rounding_bound_scope": "Input rounding only, assuming the published intent counts and macro means refer to the same population",
+      "run_aggregation_status": "Not independently verified; the appendix Precision/F1 table does not specify repetition aggregation",
+      "raw_recomputation_status": "No matching complete nine-system run outputs available locally; raw @50 and exact overall metrics not reconstructed"
+    },
+    "llm_score": {
+      "status": "missing_pending_source",
+      "judge": null,
+      "cutoff": null,
+      "scale": null,
+      "population": null,
+      "aggregation": null,
+      "missing_value": null,
+      "note": "No verified system-level result source. Dataset label audits and internal Selector scores are not substituted."
+    },
+    "validation": {
+      "intent_counts_sum": 1111,
+      "system_count": 9,
+      "imported_per_intent_metric_values": 144,
+      "model_results_unchanged": true,
+      "original_recall_values_unchanged": true,
+      "weighted_intent_recall_reproduces_all_27_published_overall_values_at_three_decimals": true
     }
   }
 }

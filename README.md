@@ -35,6 +35,14 @@ Run `python3 build.py` after changing the sources. Publishing is automatic after
 
 System results use 1,111 queries. Model configurations use ScholarQuest-100 and each configuration's valid queries, excluding failures. The tracks are reported separately. Model valid counts, prompt differences, token scope, and system budget differences are described on the page and retained in the downloadable JSON.
 
+The system table shows **Recall@k, Precision@k, F1@k, R@All, and LLM score** together. The cutoff defaults to 100 and can switch to 25; an intent selector shows the overall result or any of the four research intents. Recall at the selected cutoff determines the default ranking. These are the available system cutoffs in the manuscript; the model track retains its independently recomputed @50 metrics.
+
+- **Precision/F1:** per-intent values come directly from `appendix.tex`, table `tab:app_precision_f1`, at three-decimal source precision. Precision uses the actual returned length within the cutoff. F1 is computed per query before macro averaging.
+- **Approximate overall values (`≈`):** the manuscript does not provide overall Precision/F1. They are reconstructed by weighting its rounded intent means by 302/322/317/170 queries, totaling 1,111. Input rounding contributes up to 0.0005 error, assuming the reported counts and means describe the same population. Overall F1 is never computed from aggregate Precision/Recall. Equal displayed overall Precision/F1 estimates share a rank. Agent Recall is a three-run mean; the appendix does not specify the Precision/F1 repetition aggregation.
+- **LLM score (`—`):** no verified system-level result source is available. The column is reserved; JSON uses `null` and CSV uses empty cells. Judge, scale, cutoff and population remain unspecified. Dataset-label audit scores and internal Selector scores are not used as substitutes.
+
+`system_evaluation` records metric definitions, source fingerprint, intent weights and missing-score policy. System CSV exports all available metrics and intent breakdowns, with explicit approximation and provenance fields. Original Recall data are preserved.
+
 The model table shows **nDCG@50, P@50, R@All, and mean Planner Tokens**, with nDCG@50 descending by default. Tokens sort ascending on first selection. The October 10, 2026 update recomputes top-50 metrics from the same 680 valid model-query outputs used by the manuscript; all original Recall@All values are reproduced. Scores are macro means over each configuration's original valid queries, not a common 100-query population.
 
 - **nDCG@50:** binary frozen-gold relevance (match = 1, otherwise = 0), discounted by `1/log2(rank+1)`. IDCG uses the complete gold set, including unretrieved papers, up to 50 positives. Unjudged papers receive zero gain without being claimed irrelevant.
