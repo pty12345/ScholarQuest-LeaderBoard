@@ -1,4 +1,5 @@
 <section class="model-charts" id="model-charts" aria-label="{{charts_label}}" hidden>
+  <div class="chart-controls"><label for="chart-metric">{{chart_metric_label}}</label><select id="chart-metric"><option value="ndcg50">nDCG@50</option><option value="p50">P@50</option><option value="rall">Recall@All</option></select></div>
   <div class="chart-grid">
     <figure class="chart-panel">
       <figcaption class="chart-head"><h3 id="scatter-title">{{scatter_title}}</h3><p class="chart-subtitle" id="scatter-subtitle">{{scatter_subtitle}}</p></figcaption>
@@ -6,7 +7,7 @@
       <p class="chart-readout" id="chart-readout" aria-live="polite"></p>
     </figure>
     <figure class="chart-panel intent-panel">
-      <figcaption><h3 id="intent-title">{{intent_title}}</h3><p class="chart-subtitle">{{intent_subtitle}}</p></figcaption>
+      <figcaption><h3 id="intent-title">{{intent_title}}</h3><p class="chart-subtitle" id="intent-subtitle">{{intent_subtitle}}</p></figcaption>
       <label class="sr-only" for="chart-model">{{chart_model_label}}</label><select class="chart-select" id="chart-model"></select>
       <ul class="intent-bars" id="intent-bars" aria-labelledby="intent-title"></ul>
       <div class="intent-axis" aria-hidden="true"><span>0</span><span>0.5</span><span>1.0</span></div>
